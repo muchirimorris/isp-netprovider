@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Agape Tech Kenya</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#0ea5e9',
+                        accent: '#38bdf8',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-slate-800 antialiased">
+    <!-- Navigation (same as index.html) -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center">
+                    <div class="bg-primary text-white p-2 rounded-lg mr-2">
+                        <i class="fa-solid fa-wifi text-xl"></i>
+                    </div>
+                    <span class="font-bold text-2xl text-primary tracking-tight">AGAPE<span class="text-secondary">TECH</span></span>
+                    <span class="ml-2 text-sm font-medium text-slate-600">KENYA</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-secondary font-medium transition">Home</a>
+                    <a href="services.html" class="text-slate-600 hover:text-secondary font-medium transition">Services</a>
+                    <a href="coverage.html" class="text-slate-600 hover:text-secondary font-medium transition">Coverage</a>
+                    <a href="about.html" class="text-slate-600 hover:text-secondary font-medium transition">About</a>
+                    <a href="contact.html" class="text-secondary font-medium">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
+                <a href="index.html" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-secondary hover:bg-slate-50 rounded-md">Home</a>
+                <a href="services.html" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-secondary hover:bg-slate-50 rounded-md">Services</a>
+                <a href="coverage.html" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-secondary hover:bg-slate-50 rounded-md">Coverage</a>
+                <a href="about.html" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-secondary hover:bg-slate-50 rounded-md">About</a>
+                <a href="contact.html" class="block px-3 py-3 text-base font-medium text-secondary hover:bg-slate-50 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Get In Touch</h1>
+            <p class="text-xl text-slate-300 max-w-3xl mx-auto">Ready to get connected or have questions? We're here to help!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Contact Information -->
+                <div class="lg:col-span-1">
+                    <div class="bg-slate-50 rounded-2xl p-8 sticky top-32">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-6">Contact Information</h2>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="h-12 w-12 bg-secondary/20 rounded-lg flex items-center justify-center text-secondary mr-4">
+                                    <i class="fa-solid fa-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900 mb-1">Call Us</h3>
+                                    <p class="text-slate-600">+254 700 123 456</p>
+                                    <p class="text-slate-600">+254 711 987 654</p>
+                                    <p class="text-sm text-slate-500 mt-1">Mon-Sun, 24/7 Support</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="h-12 w-12 bg-secondary/20 rounded-lg flex items-center justify-center text-secondary mr-4">
+                                    <i class="fa-solid fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900 mb-1">Email Us</h3>
+                                    <p class="text-slate-600">info@agapetech.co.ke</p>
+                                    <p class="text-slate-600">support@agapetech.co.ke</p>
+                                    <p class="text-sm text-slate-500 mt-1">We respond within 24 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="h-12 w-12 bg-secondary/20 rounded-lg flex items-center justify-center text-secondary mr-4">
+                                    <i class="fa-solid fa-location-dot text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900 mb-1">Visit Us</h3>
+                                    <p class="text-slate-600">Agape Tech House</p>
+                                    <p class="text-slate-600">Westlands, Nairobi</p>
+                                    <p class="text-slate-600">Kenya</p>
+                                    <p class="text-sm text-slate-500 mt-1">Mon-Fri, 8:00 AM - 5:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10 pt-8 border-t border-slate-200">
+                            <h3 class="font-bold text-slate-900 mb-4">Follow Us</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-700 hover:bg-secondary hover:text-white transition">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-700 hover:bg-secondary hover:text-white transition">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#" class="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-700 hover:bg-secondary hover:text-white transition">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-700 hover:bg-secondary hover:text-white transition">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form & FAQ -->
+                <div class="lg:col-span-2">
+                    <!-- Contact Form -->
+                    <div class="mb-16">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-6">Send Us a Message</h2>
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Full Name *</label>
+                                    <input type="text" id="name" name="name" required 
+                                           class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition" 
+                                           placeholder="John Kamau">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-slate-700 mb-2">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required 
+                                           class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition" 
+                                           placeholder="+254 700 123 456">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition" 
+                                       placeholder="john@example.com">
+                            </div>
+                            
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-slate-700 mb-2">Interested Service *</label>
+                                <select id="service" name="service" required 
+                                        class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                                    <option value="">Select a service</option>
+                                    <option value="home-fiber">Home Fiber Internet</option>
+                                    <option value="business">Business Internet Solutions</option>
+                                    <option value="cctv">CCTV & Security Systems</option>
+                                    <option value="networking">Networking Solutions</option>
+                                    <option value="web">Web Design & Hosting</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="location" class="block text-sm font-medium text-slate-700 mb-2">Your Location *</label>
+                                <input type="text" id="location" name="location" required 
+                                       class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition" 
+                                       placeholder="e.g., Westlands, Nairobi">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Your Message *</label>
+                                <textarea id="message" name="message" rows="5" required 
+                                          class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition" 
+                                          placeholder="Tell us how we can help you..."></textarea>
+                            </div>
+                            
+                            <button type="submit" 
+                                    class="w-full bg-primary hover:bg-secondary text-white font-bold py-4 rounded-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- FAQ Section -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+                        <div class="space-y-4">
+                            <div class="border border-slate-200 rounded-xl overflow-hidden">
+                                <button class="faq-question w-full text-left p-6 bg-slate-50 hover:bg-slate-100 transition font-medium">
+                                    How long does installation take?
+                                </button>
+                                <div class="faq-answer hidden p-6 border-t border-slate-200">
+                                    <p class="text-slate-600">Installation typically takes 1-3 business days after survey, depending on your location and specific requirements. We'll provide you with a specific timeline after assessing your property.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="border border-slate-200 rounded-xl overflow-hidden">
+                                <button class="faq-question w-full text-left p-6 bg-slate-50 hover:bg-slate-100 transition font-medium">
+                                    What payment methods do you accept?
+                                </button>
+                                <div class="faq-answer hidden p-6 border-t border-slate-200">
+                                    <p class="text-slate-600">We accept M-Pesa, bank transfers, credit/debit cards, and cash payments. For businesses, we can arrange invoice-based billing with payment terms.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="border border-slate-200 rounded-xl overflow-hidden">
+                                <button class="faq-question w-full text-left p-6 bg-slate-50 hover:bg-slate-100 transition font-medium">
+                                    Do you offer free installation?
+                                </button>
+                                <div class="faq-answer hidden p-6 border-t border-slate-200">
+                                    <p class="text-slate-600">Yes! We offer free standard installation for all our fiber internet packages. Additional charges may apply for complex setups or special requirements.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="border border-slate-200 rounded-xl overflow-hidden">
+                                <button class="faq-question w-full text-left p-6 bg-slate-50 hover:bg-slate-100 transition font-medium">
+                                    What happens during an outage?
+                                </button>
+                                <div class="faq-answer hidden p-6 border-t border-slate-200">
+                                    <p class="text-slate-600">Our 24/7 technical support team is immediately notified of any outages. We aim to resolve issues within 4 hours for business customers and 12 hours for residential customers, as per our SLA.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-white mb-6">Need Immediate Assistance?</h2>
+            <p class="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">Call our 24/7 support line for urgent technical issues</p>
+            <a href="tel:+254700123456" class="inline-flex items-center px-8 py-4 bg-secondary hover:bg-sky-600 text-white font-bold rounded-full text-lg transition shadow-lg">
+                <i class="fa-solid fa-phone mr-3"></i> Call Now: +254 700 123 456
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="font-bold text-2xl text-white tracking-tight mb-4 inline-block">AGAPE<span class="text-secondary">TECH</span> <span class="text-sm">KENYA</span></a>
+                    <p class="text-sm mt-2">Bridging the digital divide in Kenya with reliable, affordable internet solutions.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="coverage.html" class="hover:text-white transition">Coverage Areas</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#fiber" class="hover:text-white transition">Fiber Internet</a></li>
+                        <li><a href="services.html#business" class="hover:text-white transition">Business Solutions</a></li>
+                        <li><a href="services.html#security" class="hover:text-white transition">CCTV Security</a></li>
+                        <li><a href="services.html#networking" class="hover:text-white transition">Networking</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start"><i class="fa-solid fa-phone mt-1 mr-3 text-secondary"></i> <span>+254 700 123 456</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-envelope mt-1 mr-3 text-secondary"></i> <span>info@agapetech.co.ke</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-location-dot mt-1 mr-3 text-secondary"></i> <span>Nairobi, Kenya</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center">
+                <p>&copy; 2024 Agape Tech Internet Solutions Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const isVisible = answer.classList.contains('hidden');
+                
+                // Close all other answers
+                document.querySelectorAll('.faq-answer').forEach(item => {
+                    item.classList.add('hidden');
+                });
+                
+                // Toggle current answer
+                if (isVisible) {
+                    answer.classList.remove('hidden');
+                } else {
+                    answer.classList.add('hidden');
+                }
+            });
+        });
+
+        // Check if there's a pre-selected package from services page
+        document.addEventListener('DOMContentLoaded', function() {
+            const selectedPackage = sessionStorage.getItem('selectedPackage');
+            const selectedSpeed = sessionStorage.getItem('selectedSpeed');
+            
+            if (selectedPackage && selectedSpeed) {
+                const messageField = document.getElementById('message');
+                if (messageField) {
+                    messageField.value = `I'm interested in the ${selectedPackage} package (${selectedSpeed}). Please contact me with more information.`;
+                }
+                
+                // Clear the stored values
+                sessionStorage.removeItem('selectedPackage');
+                sessionStorage.removeItem('selectedSpeed');
+            }
+            
+            // Check URL parameters for coverage area
+            const urlParams = new URLSearchParams(window.location.search);
+            const area = urlParams.get('area');
+            if (area) {
+                const locationField = document.getElementById('location');
+                if (locationField) {
+                    locationField.value = area;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
